@@ -8,7 +8,23 @@ Raspberry Pi Zero 2 W based Chess Computer
 ![2331](https://github.com/user-attachments/assets/85d27000-4344-44d7-8f23-d0c429c6f2c4)
 ![12](https://github.com/user-attachments/assets/6596596c-9a8d-4c6d-be01-3d6eb8d45f84)
 
+### Hardware und Komponentenliste
+| **Komponente**                          | **Anzahl** | **Beschreibung**                                 |
+|-----------------------------------------|------------|-------------------------------------------------|
+| Raspberry Pi Zero 2 W                   | 1          | Mini-Computer zur Steuerung                     |
+| 1.3 Zoll OLED Display (SH1106, I2C)     | 1          | Display zur Anzeige der Schachzüge              |
+| 4x4 Button-Matrix                       | 1          | Eingabegerät für Schachzüge                     |
+| LiPo-Akku 3.7V (1000mAh)                | 1          | Stromversorgung für den Raspberry Pi            |
+| Waveshare UPS HAT für Raspberry Pi Zero | 1          | HAT-Modul zur Akkuverwaltung und Stromversorgung|
+| Micro-SD-Karte (mind. 8GB)              | 1          | Speicherkarte für Raspberry Pi OS und Code      |
+
+---
+
+
 ## Wiring Guide 
+
+<img width="539" alt="Bildschirmfoto 2024-12-16 um 10 53 50" src="https://github.com/user-attachments/assets/e0960a62-ca42-4f72-8d2f-7379c8c0a741" />
+
 
 ### Button-Matrix Verkabelung
 | **Matrix-Pin** | **Raspberry Pi GPIO (BCM)** | **Physischer Pin** | **Beschreibung** |
@@ -49,19 +65,6 @@ Raspberry Pi Zero 2 W based Chess Computer
 ### Hinweise für die Verkabelung
 1. **Button-Matrix**: Die Reihen-Pins sind als **Eingänge** und die Spalten-Pins als **Ausgänge** konfiguriert.
 2. **OLED-Display**: Verwendet das **I2C-Protokoll**; muss in der Raspberry Pi Konfiguration aktiviert entsprechend werden (`sudo raspi-config`).
-
----
-
-### Hardware und Komponentenliste
-| **Komponente**                          | **Anzahl** | **Beschreibung**                                 |
-|-----------------------------------------|------------|-------------------------------------------------|
-| Raspberry Pi Zero 2 W                   | 1          | Mini-Computer zur Steuerung                     |
-| 1.3 Zoll OLED Display (SH1106, I2C)     | 1          | Display zur Anzeige der Schachzüge              |
-| 4x4 Button-Matrix                       | 1          | Eingabegerät für Schachzüge                     |
-| LiPo-Akku 3.7V (1000mAh)                | 1          | Stromversorgung für den Raspberry Pi            |
-| Waveshare UPS HAT für Raspberry Pi Zero | 1          | HAT-Modul zur Akkuverwaltung und Stromversorgung|
-| Micro-SD-Karte (mind. 8GB)              | 1          | Speicherkarte für Raspberry Pi OS und Code      |
-
 
 ---
 
