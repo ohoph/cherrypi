@@ -2,7 +2,7 @@
 
 # cherrypi
 
-Raspberry Pi Zero 2 W based Chess Computer
+Raspberry Pi Zero 2 W based Portable Chess Computer
 
 ![1345](https://github.com/user-attachments/assets/e1ad9f5d-69b3-400c-b369-6a879702a258)
 ![2331](https://github.com/user-attachments/assets/85d27000-4344-44d7-8f23-d0c429c6f2c4)
