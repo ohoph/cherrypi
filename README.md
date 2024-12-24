@@ -8,6 +8,72 @@ Raspberry Pi Zero 2 W based Portable Chess Computer
 ![2331](https://github.com/user-attachments/assets/85d27000-4344-44d7-8f23-d0c429c6f2c4)
 ![12](https://github.com/user-attachments/assets/6596596c-9a8d-4c6d-be01-3d6eb8d45f84)
 
+# Cherrypi - über Kirschkuchen und Schachcomputer
+
+Dieses Repository dokumentiert den Aufbau meines selbstgebauten Schachcomputers – ein persönliches Projekt, das von der Idee bis zur Umsetzung eine Reise voller Höhen und Tiefen war. Der Computer sollte ein Weihnachtsgeschenk sein, das nicht nur funktional, sondern auch emotional besonders ist. Obwohl er heute nicht funktionsfähig ist, bedeutet mir dieses Projekt eine Menge. Es war eine Reise mit vielen Höhen und Tiefen, ich habe sooo viel gelernt und hoffe darauf, dass dieses Projekt eines Tages (bald) von allen nachgebaut werden kann, die sich ein ähnliches Projekt wünschen. 
+
+---
+
+## 🛠️ **Funktionalität**
+
+Der Schachcomputer vereint Hard- und Software zu einem eigenständigen Gerät, das Schachspiele mit einem Brett alleine und überall ermöglicht. Hier die wichtigsten Funktionen:
+
+1. **Schachprogramm:**
+   - Automatischer Start des Schachprogramms (Stockfish) beim Hochfahren.
+   - Steuerung über eine selbstgebaute Tastaturmatrix.
+   - Ausgabe auf einem OLED-Display.
+
+2. **Hardware:**
+   - Raspberry Pi Zero W (2) als Herzstück.
+   - 16-Tasten-Matrix als Schachbrett-Eingabe.
+   - 1,3-Zoll-OLED-Display für Spielinformationen.
+   - 3D-gedrucktes Gehäuse mit Magnetverschluss.
+
+3. **UPS-Modul:**
+   - Ein- und Ausschalten des Computers über einen Schiebeschalter.
+   - Saubere Stromversorgung über einen Akku.
+   - Bietet die Möglichkeit, den Computer überall hin mitzunehmen
+
+---
+
+## 🔧 **Zusammenbau**
+
+### **Benötigte Komponenten**
+- **Raspberry Pi Zero W** (ohne Headerpins).
+- **1,3-Zoll-OLED-Display** (I2C, 128x64 Pixel).
+- **16-Tasten-Matrix**.
+- **3D-gedrucktes Gehäuse** (STLs sind in diesem Repository verfügbar!).
+- **3D-gedruckte Keycaps für die Tasten-Matrix** (Wird diesem Repository als STL beigefügt, sobald die finalen Designs fertig sind)
+- **Magnete** für den Verschlussmechanismus.
+- **Lötstation**, Lötzinn, Entlötpumpe und Multimeter.
+
+### **Software**
+- Raspberry Pi OS Lite (32-Bit).
+- Python-Skripte für das Schachprogramm, das OLED-Display und die Tastatureingabe.
+- Systemd-Dienste für das automatische Starten von Programmen und das Überwachen des UPS-Schalters.
+
+---
+
+## 💡 **Schritte zum Zusammenbau**
+
+### **1. Hardware vorbereiten**
+- **OLED-Display:** I2C-Verbindungen verlöten und testen.
+- **Tastaturmatrix:** Verlöten und mit GPIO-Pins verbinden.
+- **Raspberry Pi:** Headerpins entfernen (falls vorhanden) und alle Verbindungen sauber verlöten.
+- **UPS-Modul:** Mit dem Pi verbinden und den Schalter für Ein/Aus konfigurieren.
+
+### 2. Softwareanforderungen
+1. **Raspberry Pi OS** (aktuellste Version)
+2. **Python 3**
+3. Bibliotheken:
+   - `RPi.GPIO`
+   - `luma.oled`
+   - `Pillow`
+   - `python-chess`
+   - `stockfish`
+4. **I2C-Tools** zur Aktivierung und Testen des I2C-Busses.
+  
+
 ### Hardware und Komponentenliste
 | **Komponente**                          | **Anzahl** | **Beschreibung**                                 |
 |-----------------------------------------|------------|-------------------------------------------------|
@@ -68,14 +134,4 @@ Raspberry Pi Zero 2 W based Portable Chess Computer
 
 ---
 
-### Softwareanforderungen
-1. **Raspberry Pi OS** (aktuellste Version)
-2. **Python 3**
-3. Bibliotheken:
-   - `RPi.GPIO`
-   - `luma.oled`
-   - `Pillow`
-   - `python-chess`
-   - `stockfish`
-4. **I2C-Tools** zur Aktivierung und Testen des I2C-Busses.
 
