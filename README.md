@@ -4,6 +4,7 @@
 
 Raspberry Pi Zero 2 W based Portable Chess Computer
 
+
 ![1345](https://github.com/user-attachments/assets/e1ad9f5d-69b3-400c-b369-6a879702a258)
 ![2331](https://github.com/user-attachments/assets/85d27000-4344-44d7-8f23-d0c429c6f2c4)
 ![12](https://github.com/user-attachments/assets/6596596c-9a8d-4c6d-be01-3d6eb8d45f84)
@@ -12,29 +13,90 @@ Raspberry Pi Zero 2 W based Portable Chess Computer
 
 Dieses Repository dokumentiert den Aufbau meines selbstgebauten Schachcomputers – ein persönliches Projekt, das von der Idee bis zur Umsetzung eine Reise voller Höhen und Tiefen war. Der Computer sollte ein Weihnachtsgeschenk sein, das nicht nur funktional, sondern auch emotional besonders ist. Obwohl er heute nicht funktionsfähig ist, bedeutet mir dieses Projekt eine Menge. Es war eine Reise mit vielen Höhen und Tiefen, ich habe sooo viel gelernt und hoffe darauf, dass dieses Projekt eines Tages (bald) von allen nachgebaut werden kann, die sich ein ähnliches Projekt wünschen. 
 
+
+![IMG_8A8BB41F64B1-1](https://github.com/user-attachments/assets/8ce64253-fce1-460d-a680-53646f64a5ac)
+![IMG_86837E7B299C-1](https://github.com/user-attachments/assets/5b5cac45-c3fe-4e87-bc9a-8b18aa3a05ca)
+
 ---
 
 ## 🛠️ **Funktionalität**
 
-Der Schachcomputer vereint Hard- und Software zu einem eigenständigen Gerät, das Schachspiele mit einem Brett alleine und überall ermöglicht. Hier die wichtigsten Funktionen:
+Der Cherrypi-Schachcomputer bietet:
 
-1. **Schachprogramm:**
-   - Automatischer Start des Schachprogramms (Stockfish) beim Hochfahren.
-   - Steuerung über eine selbstgebaute Tastaturmatrix.
-   - Ausgabe auf einem OLED-Display.
 
-2. **Hardware:**
-   - Raspberry Pi Zero W (2) als Herzstück.
-   - 16-Tasten-Matrix als Schachbrett-Eingabe.
-   - 1,3-Zoll-OLED-Display für Spielinformationen.
-   - 3D-gedrucktes Gehäuse mit Magnetverschluss.
+1. **Eigenständige Schachfunktion:**
+   - Nutzt **Stockfish** als Schach-Engine. Spielt auf etwa 2500er ELO. 
+   - Steuere das Spiel mit einer 16-Tasten-Matrix (ähnlich einem tragbaren Brett).
+   - Zeigt Spielinformationen auf einem **OLED-Display** an.
 
-3. **UPS-Modul:**
-   - Ein- und Ausschalten des Computers über einen Schiebeschalter.
-   - Saubere Stromversorgung über einen Akku.
-   - Bietet die Möglichkeit, den Computer überall hin mitzunehmen
+2. **Portabilität:**
+   - Dank eines **UPS-Moduls** (mit Akku) und eines **Ein/Aus-Schiebeschalters** kann der Computer überall verwendet werden.
+
+3. **Software-Integration:**
+   - Automatischer Start in das Schachprogramm direkt beim Hochfahren.
+   - Alle Funktionen laufen eigenständig – ohne Internetverbindung.
+
+4. **Benutzerfreundliches Gehäuse:**
+   - Ein 3D-gedrucktes Gehäuse schützt die Hardware.
+   - Magnetverschluss für einfachen Zugriff auf die Elektronik.
+   - 3D-gedruckte Keycaps für ein individuelles Schach-Feeling.
 
 ---
+## 🎮 **Spielanleitung**
+
+### **Tastenbelegung**
+Die 16-Tasten-Matrix ist wie folgt organisiert:
+
+
+| Taste (S1-S16) | Funktionalität         | Beschreibung                       |
+|----------------|------------------------|------------------------------------|
+| S1             | A/1                    | Spalte A oder Reihe 1              |
+| S2             | B/2                    | Spalte A oder Reihe 1              |
+| S3             | C/3                    | Spalte A oder Reihe 1              |
+| S4             | D/4                    | Spalte A oder Reihe 1              |
+| S5             | E/5                    | Spalte A oder Reihe 1              |
+| S6             | F/6                    | Spalte A oder Reihe 1              |
+| S7             | G/7                    | Spalte A oder Reihe 1              |
+| S8             | H/8                    | Spalte A oder Reihe 1              |
+| S9             | Dame                   | Bauernumwandlung in Dame           |
+| S10            | Turm                   | Bauernumwandlung in Turm           |
+| S11            | Läufer                 | Bauernumwandlung in Läufer         |
+| S12            | Springer               | Bauernumwandlung in Springer       |
+| S13            | Surrende               | Beendet Spiel durch Aufgave        |
+| S14            | Clear                  | Löscht gesamte Eingabe             |
+| S15            | Delete                 | Löscht letzte Ziffer von Eingabe   |
+| S16            | Go                     | Bestätigt Eingabe                  |
+
+### **Züge eingeben**
+- Um einen Zug einzugeben, drücke **nacheinander zwei Felder**:
+  - Das erste Feld ist die Startposition des Steins.
+  - Das zweite Feld ist die Zielposition des Steins.
+  - Beispiel: Um von `E2` nach `E4` zu ziehen, drücke die Taste für `E2` und anschließend die Taste für `E4`.
+
+### **Sonderfunktionen**
+- **Bauernumwandlung:**
+  - Wird ein Bauer in die letzte Reihe bewegt, erscheint auf dem Display die Aufforderung zur Umwandlung.
+  - Wähle mit den Tasten `A`, `B`, `C`, `D` die gewünschte Figur:
+    - `A`: Königin
+    - `B`: Turm
+    - `C`: Läufer
+    - `D`: Springer
+
+- **Rochade:**
+  - Gib den Zug des Königs an. Das System erkennt automatisch die Rochade, sofern legal.
+
+- **Zug zurücknehmen:**
+  - Halte die Taste `S16` gedrückt, um den letzten Zug zurückzunehmen.
+
+- **Neues Spiel starten:**
+  - Halte `S1` gedrückt, um das Spiel zurückzusetzen und eine neue Partie zu beginnen.
+
+### **Display-Anzeige**
+
+- Das OLED-Display zeigt:
+  - Den aktuellen Zug.
+  - Die letzten Züge.
+  - Hinweise wie "Press any key to start" oder Fehler bei illegalen Zügen.
 
 ## 🔧 **Zusammenbau**
 
@@ -131,6 +193,11 @@ Der Schachcomputer vereint Hard- und Software zu einem eigenständigen Gerät, d
 ### Hinweise für die Verkabelung
 1. **Button-Matrix**: Die Reihen-Pins sind als **Eingänge** und die Spalten-Pins als **Ausgänge** konfiguriert.
 2. **OLED-Display**: Verwendet das **I2C-Protokoll**; muss in der Raspberry Pi Konfiguration aktiviert entsprechend werden (`sudo raspi-config`).
+
+
+### Bildergalerie
+
+![IMG_7413](https://github.com/user-attachments/assets/995f9a41-c0e2-448c-8c33-d4b459cbea2a)
 
 ---
 
