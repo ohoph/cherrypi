@@ -71,7 +71,7 @@ Die 16-Tasten-Matrix ist wie folgt organisiert:
 - Um einen Zug einzugeben, drücke **nacheinander zwei Felder**:
   - Das erste Feld ist die Startposition des Steins.
   - Das zweite Feld ist die Zielposition des Steins.
-  - Beispiel: Um von `E2` nach `E4` zu ziehen, drücke die Taste für `E2` und anschließend die Taste für `E4`.
+  - Beispiel: Um von `E2` nach `E4` zu ziehen, drücke die Tasten 5,2,5,4 (e2e4) und bestätige den Zug mit "Go". 
 
 ### **Sonderfunktionen**
 - **Bauernumwandlung:**
