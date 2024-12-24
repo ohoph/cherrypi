@@ -15,7 +15,6 @@ Dieses Repository dokumentiert den Aufbau meines selbstgebauten Schachcomputers 
 
 
 ![IMG_8A8BB41F64B1-1](https://github.com/user-attachments/assets/8ce64253-fce1-460d-a680-53646f64a5ac)
-![IMG_86837E7B299C-1](https://github.com/user-attachments/assets/5b5cac45-c3fe-4e87-bc9a-8b18aa3a05ca)
 
 ---
 
@@ -157,22 +156,22 @@ Die 16-Tasten-Matrix ist wie folgt organisiert:
 ### Button-Matrix Verkabelung
 | **Matrix-Pin** | **Raspberry Pi GPIO (BCM)** | **Physischer Pin** | **Beschreibung** |
 |-----------------|----------------------------|--------------------|------------------|
-| **1**          | GPIO 25                    | Pin 22             | Zeile 1          |
-| **2**          | GPIO 23                    | Pin 16             | Zeile 2          |
-| **3**          | GPIO 24                    | Pin 18             | Zeile 3          |
-| **4**          | GPIO 18                    | Pin 12             | Zeile 4          |
-| **5**          | GPIO 27                    | Pin 13             | Spalte 1         |
-| **6**          | GPIO 22                    | Pin 15             | Spalte 2         |
-| **7**          | GPIO 17                    | Pin 11             | Spalte 3         |
-| **8**          | GPIO 4                     | Pin 7              | Spalte 4         |
+| **1**          | GPIO 25                     | Pin 22             | Zeile 1          |
+| **2**          | GPIO 23                     | Pin 16             | Zeile 2          |
+| **3**          | GPIO 24                     | Pin 18             | Zeile 3          |
+| **4**          | GPIO 18                     | Pin 12             | Zeile 4          |
+| **5**          | GPIO 27                     | Pin 13             | Spalte 1         |
+| **6**          | GPIO 22                     | Pin 15             | Spalte 2         |
+| **7**          | GPIO 17                     | Pin 11             | Spalte 3         |
+| **8**          | GPIO 4                      | Pin 7              | Spalte 4         |
 
 ### OLED-Display (SH1106) Verkabelung
 | **OLED Pin**    | **Raspberry Pi GPIO (BCM)** | **Physischer Pin** | **Beschreibung**         |
 |------------------|----------------------------|--------------------|--------------------------|
-| **VCC**         | 3.3V                       | Pin 1              | Spannungsversorgung      |
-| **GND**         | GND                        | Pin 9              | Masse                    |
-| **SDA**         | GPIO 2 (SDA)               | Pin 3              | I2C-Datenleitung         |
-| **SCL**         | GPIO 3 (SCL)               | Pin 5              | I2C-Taktleitung          |
+| **VCC**         | 3.3V                       | Pin 1              | Spannungsversorgung       |
+| **GND**         | GND                        | Pin 9              | Masse                     |
+| **SDA**         | GPIO 2 (SDA)               | Pin 3              | I2C-Datenleitung          |
+| **SCL**         | GPIO 3 (SCL)               | Pin 5              | I2C-Taktleitung          | 
 
 ### Zusammenfassung der Pinbelegung
 | **Funktion**         | **Raspberry Pi GPIO (BCM)** | **Physischer Pin** |
@@ -198,6 +197,10 @@ Die 16-Tasten-Matrix ist wie folgt organisiert:
 ### Bildergalerie
 
 ![IMG_7413](https://github.com/user-attachments/assets/995f9a41-c0e2-448c-8c33-d4b459cbea2a)
+
+![IMG_86837E7B299C-1](https://github.com/user-attachments/assets/5b5cac45-c3fe-4e87-bc9a-8b18aa3a05ca)
+
+
 
 ---
 
