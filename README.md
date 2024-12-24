@@ -171,23 +171,23 @@ Die 16-Tasten-Matrix ist wie folgt organisiert:
 | **VCC**         | 3.3V                       | Pin 1              | Spannungsversorgung       |
 | **GND**         | GND                        | Pin 9              | Masse                     |
 | **SDA**         | GPIO 2 (SDA)               | Pin 3              | I2C-Datenleitung          |
-| **SCL**         | GPIO 3 (SCL)               | Pin 5              | I2C-Taktleitung          | 
+| **SCL**         | GPIO 3 (SCL)               | Pin 5              | I2C-Taktleitung           | 
 
 ### Zusammenfassung der Pinbelegung
 | **Funktion**         | **Raspberry Pi GPIO (BCM)** | **Physischer Pin** |
 |-----------------------|----------------------------|--------------------|
-| Button-Matrix Zeile 1 | GPIO 25                   | Pin 22             |
-| Button-Matrix Zeile 2 | GPIO 23                   | Pin 16             |
-| Button-Matrix Zeile 3 | GPIO 24                   | Pin 18             |
-| Button-Matrix Zeile 4 | GPIO 18                   | Pin 12             |
-| Button-Matrix Spalte 1| GPIO 27                   | Pin 13             |
-| Button-Matrix Spalte 2| GPIO 22                   | Pin 15             |
-| Button-Matrix Spalte 3| GPIO 17                   | Pin 11             |
-| Button-Matrix Spalte 4| GPIO 4                    | Pin 7              |
-| OLED VCC              | 3.3V                      | Pin 1              |
-| OLED GND              | GND                       | Pin 9              |
-| OLED SDA              | GPIO 2 (SDA)              | Pin 3              |
-| OLED SCL              | GPIO 3 (SCL)              | Pin 5              |
+| Button-Matrix Zeile 1 | GPIO 25                    | Pin 22             |
+| Button-Matrix Zeile 2 | GPIO 23                    | Pin 16             |
+| Button-Matrix Zeile 3 | GPIO 24                    | Pin 18             |
+| Button-Matrix Zeile 4 | GPIO 18                    | Pin 12             |
+| Button-Matrix Spalte 1| GPIO 27                    | Pin 13             |
+| Button-Matrix Spalte 2| GPIO 22                    | Pin 15             |
+| Button-Matrix Spalte 3| GPIO 17                    | Pin 11             |
+| Button-Matrix Spalte 4| GPIO 4                     | Pin 7              |
+| OLED VCC              | 3.3V                       | Pin 1              |
+| OLED GND              | GND                        | Pin 9              |
+| OLED SDA              | GPIO 2 (SDA)               | Pin 3              |
+| OLED SCL              | GPIO 3 (SCL)               | Pin 5              |
 
 ### Hinweise für die Verkabelung
 1. **Button-Matrix**: Die Reihen-Pins sind als **Eingänge** und die Spalten-Pins als **Ausgänge** konfiguriert.
