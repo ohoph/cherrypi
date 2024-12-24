@@ -61,7 +61,7 @@ Die 16-Tasten-Matrix ist wie folgt organisiert:
 | S10            | Turm                   | Bauernumwandlung in Turm           |
 | S11            | Läufer                 | Bauernumwandlung in Läufer         |
 | S12            | Springer               | Bauernumwandlung in Springer       |
-| S13            | Surrende               | Beendet Spiel durch Aufgave        |
+| S13            | Surrender              | Beendet Spiel durch Aufgabe        |
 | S14            | Clear                  | Löscht gesamte Eingabe             |
 | S15            | Delete                 | Löscht letzte Ziffer von Eingabe   |
 | S16            | Go                     | Bestätigt Eingabe                  |
@@ -75,20 +75,20 @@ Die 16-Tasten-Matrix ist wie folgt organisiert:
 ### **Sonderfunktionen**
 - **Bauernumwandlung:**
   - Wird ein Bauer in die letzte Reihe bewegt, erscheint auf dem Display die Aufforderung zur Umwandlung.
-  - Wähle mit den Tasten `A`, `B`, `C`, `D` die gewünschte Figur:
-    - `A`: Königin
-    - `B`: Turm
-    - `C`: Läufer
-    - `D`: Springer
+  - Wähle mit den Tasten `9`, `10`, `11`, `12` die gewünschte Figur:
+    - `9`: Königin
+    - `10`: Turm
+    - `11`: Läufer
+    - `12`: Springer
 
 - **Rochade:**
   - Gib den Zug des Königs an. Das System erkennt automatisch die Rochade, sofern legal.
 
 - **Zug zurücknehmen:**
-  - Halte die Taste `S16` gedrückt, um den letzten Zug zurückzunehmen.
+  - Halte die Taste `14` gedrückt, um den letzten Zug zurückzunehmen.
 
 - **Neues Spiel starten:**
-  - Halte `S1` gedrückt, um das Spiel zurückzusetzen und eine neue Partie zu beginnen.
+  - Halte `13` gedrückt, um aufzugeben und eine neue Partie zu beginnen.
 
 ### **Display-Anzeige**
 
@@ -201,6 +201,7 @@ Die 16-Tasten-Matrix ist wie folgt organisiert:
 ![IMG_86837E7B299C-1](https://github.com/user-attachments/assets/5b5cac45-c3fe-4e87-bc9a-8b18aa3a05ca)
 
 
+https://github.com/user-attachments/assets/6dfa8066-77cf-47a0-b1ef-a18c7b4af382
 
 ---
 
